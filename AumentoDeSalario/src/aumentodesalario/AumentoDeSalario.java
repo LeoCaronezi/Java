@@ -22,7 +22,8 @@ public class AumentoDeSalario {
       System.out.println("digite o percentual do aumento:");
       porcentagem= leitor.nextDouble();
       salariocorrigido = ((porcentagem/100)*salario) + salario;
-      System.out.println("O seu salario e "+ salario+"O aumento foi para, "+salariocorrigido );
+      System.out.println("O seu salario e "+ salario+"O aumento foi para, "
+                           +salariocorrigido );
     }
     
 }
