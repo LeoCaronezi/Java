@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 package conversodedolarprareal;
-
+import java.util.Scanner;
 /**
  *
- * @author rafae
+ * @author rafael caronezi 
  */
 public class Conversodedolarprareal {
 
@@ -16,6 +16,15 @@ public class Conversodedolarprareal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner lastro = new Scanner (System.in);
+        double real , dolar;
+        System.out.println ("Digite a cotação do dolar:");
+        dolar = lastro.nextDouble();
+        System.out.println("Digite o valor em reais que sera consumido: ");
+        real = lastro.nextDouble();
+        System.out.println("voce possuir,R$ "+ real + " , em Dolar ,e "
+               + (real / dolar)  );
+        
     }
     
 }
