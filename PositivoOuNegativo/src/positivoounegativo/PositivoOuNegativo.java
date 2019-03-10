@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package positivoounegativo;
-
+import java.util.Scanner;
 /**
  *
  * @author rafae
@@ -15,7 +15,11 @@ public class PositivoOuNegativo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner scan = new Scanner (System.in);
+        int num;
+        System.out.println("Digite um numero: ");
+        num = scan.nextInt();
+        System.out.println((num>0)? "positivo":"negativo");
     }
     
 }
