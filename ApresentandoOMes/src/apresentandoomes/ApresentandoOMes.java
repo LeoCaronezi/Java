@@ -1,5 +1,6 @@
 /* usando o Switch case 
-  exercecio onde atraves do numero apresento os meses do ano. 
+  exercecio onde atraves do numero apresento os meses do ano.
+   segunda parte informa se o mes escolhido e par ou um mes impar:
  */
 package apresentandoomes;
 import java.util.Scanner;
@@ -18,8 +19,9 @@ public class ApresentandoOMes {
        System.out.println("Digite um numero de 1 a  12:");
        mesdoano = mes.nextInt();
        if (mesdoano >0 && mesdoano< 13){
+          if (mesdoano%2 ==0){     
        switch (mesdoano){
-       /*    case 1:
+          case 1:
                System.out.println("janeiro");
             break;
            case 2 :
@@ -54,12 +56,17 @@ public class ApresentandoOMes {
                break;
            case 12: 
                System.out.println("dezembro");
-               break;  */
+               break;  
+       }
+        System.out.println("E um mes par:");
+          }
+         else {
+        System.out.println("o mes e impar:");
        }
        }
-       else {
+      else {
            System.out.println("o numero digitado e invalido");
-       }
+       } 
     }
 }
         
