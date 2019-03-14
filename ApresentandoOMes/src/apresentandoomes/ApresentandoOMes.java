@@ -1,20 +1,20 @@
 /* usando o Switch case 
   exercecio onde atraves do numero apresento os meses do ano.
    segunda parte informa se o mes escolhido e par ou um mes impar:
+   terceira parte informa se o ano e bisexto ou não.
  */
 package apresentandoomes;
 import java.util.Scanner;
+import java.time.LocalDateTime;
 /**
  *
  * @author rafael caronezi
  */
 public class ApresentandoOMes {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
        Scanner mes = new Scanner (System.in);
+       LocalDateTime ano = LocalDateTime.now();
        int mesdoano;
        System.out.println("Digite um numero de 1 a  12:");
        mesdoano = mes.nextInt();
@@ -25,7 +25,14 @@ public class ApresentandoOMes {
                System.out.println("janeiro");
             break;
            case 2 :
+              if (ano.getYear()%4 ==0){ 
                System.out.println("fevereiro");
+               System.out.println("o ano e bissexto. ");
+              }
+              else {
+                  System.out.println("Fevereiro");
+                  System.out.println("O ano nao e bissexto");
+              }
             break;
            case 3 :
               System.out.println("março");
