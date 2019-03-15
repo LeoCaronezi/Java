@@ -7,7 +7,7 @@ package jogodasfigurinhas;
 
 /**
  *
- * @author rafae
+ * @author rafael caronezi
  */
 public class JogoDasFigurinhas {
 
