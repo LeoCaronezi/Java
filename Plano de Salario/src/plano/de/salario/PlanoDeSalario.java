@@ -20,15 +20,25 @@ public class PlanoDeSalario {
       System.out.println("1- grupo a:");
       System.out.println("2-grupo b:");
       System.out.println("3-grupo c:");
-      cont = scan.nextInt();
+      cont = 1;
       System.out.println("Digite seu salario:");
-      salario = Double.parseDouble(scan.toString());
+      salario = 1000;
       switch (cont){
           case 1 :{
               novosalario = (((10/100) * salario ) + salario);
               System.out.println(novosalario);
               break;
           }
+          case 2 :
+          {
+              novosalario=  ((15/100) * salario) + salario;
+              System.out.println(novosalario);
+              break;
+          }
+          case 3 : 
+             novosalario = ((20/100) * salario) + salario;
+             System.out.println(novosalario);
+             break;
       }
 }
 }
