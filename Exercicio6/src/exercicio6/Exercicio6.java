@@ -22,7 +22,22 @@ public class Exercicio6 {
             vetordocapiroto[v]= teclado.nextInt();
         }
         Arrays.sort(vetordocapiroto);
-              /*  for (int v = 0; v<7 ; v++){
+        int num;
+        System.out.println("digite o numero que vai digitado");
+        num= teclado.nextInt();
+        //fazendo a pesquisa binaria. 
+        //observação o Arrays.binarySeach so ira funcionar com o vetor ordenado.
+        int pos = Arrays.binarySearch(vetordocapiroto, num);
+        if (num>=0){
+          System.out.println(" o numero foi encontrado na posição:" + pos);
+        }
+        else{
+            System.out.println("O numero foi encontrado na posição: "+pos);
+        } 
+            
+        
+        
+        /*  for (int v = 0; v<7 ; v++){
                  // esta merda foi exucutada 8 vezes comando array sort 
                   Arrays.sort(vetordocapiroto);
                  System.out.println(vetordocapiroto[v]);
