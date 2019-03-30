@@ -12,14 +12,23 @@ package JogodaVelha;
  * versão 0.0.1
  */
 public class JogoDaVelha extends javax.swing.JFrame {
-
+      boolean jogador1 = true;
+      boolean jogador2 = false;
     /**
      * Creates new form JogoDaVelha
      */
     public JogoDaVelha() {
         initComponents();
     }
-
+   public void JogadorAtivo(){
+     if(jogador1 == true){
+        jogador1 = false;
+        jogador2 = true;
+     }  else{
+         jogador1 = true;
+         jogador2 = false;
+     } 
+   }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -63,6 +72,60 @@ public class JogoDaVelha extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+
+        b1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1ActionPerformed(evt);
+            }
+        });
+
+        b2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b2ActionPerformed(evt);
+            }
+        });
+
+        b3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b3ActionPerformed(evt);
+            }
+        });
+
+        b4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b4ActionPerformed(evt);
+            }
+        });
+
+        b5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b5ActionPerformed(evt);
+            }
+        });
+
+        b6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b6ActionPerformed(evt);
+            }
+        });
+
+        b7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b7ActionPerformed(evt);
+            }
+        });
+
+        b8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b8ActionPerformed(evt);
+            }
+        });
+
+        b9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b9ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -257,6 +320,126 @@ public class JogoDaVelha extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
+     if(jogador1==true){
+       if(b2.getText().equals("")){
+         b2.setText("X");
+         JogadorAtivo();
+       }
+       else if(b2.getText().equals("")){
+           b2.setText("P");
+           JogadorAtivo();
+       }
+     }
+    }//GEN-LAST:event_b2ActionPerformed
+
+    private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
+     if(jogador1==true){
+       if(b1.getText().equals("")){
+           b1.setText("X");
+           JogadorAtivo();
+       }
+       else if(b1.getText().equals("")){
+            b1.setText("O");
+            JogadorAtivo();
+           }
+       
+     }
+    }//GEN-LAST:event_b1ActionPerformed
+
+    private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
+       if(jogador1==true){
+       if(b3.getText().equals("")){
+           b3.setText("X");
+           JogadorAtivo();
+       }
+       else if(b3.getText().equals("")){
+            b3.setText("P");
+            JogadorAtivo();
+           }
+       
+     }
+    }//GEN-LAST:event_b3ActionPerformed
+
+    private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
+if(jogador1==true){
+       if(b4.getText().equals("")){
+           b4.setText("X");
+           JogadorAtivo();
+       }
+       else if(b4.getText().equals("")){
+            b4.setText("O");
+            JogadorAtivo();
+           }
+     }
+    }//GEN-LAST:event_b4ActionPerformed
+
+    private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
+       if(jogador1==true){
+        if(b5.getText().equals("")){
+           b5.setText("X");
+           JogadorAtivo();
+       }
+        else if(b5.getText().equals("")){
+            b5.setText("O");
+            JogadorAtivo();
+           }
+       
+     }    }//GEN-LAST:event_b5ActionPerformed
+
+    private void b6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b6ActionPerformed
+     if(jogador1==true){
+       if(b6.getText().equals("")){
+           b6.setText("X");
+           JogadorAtivo();
+       }
+       else if(b6.getText().equals("")){
+            b6.setText("O");
+            JogadorAtivo();
+           }
+       
+     }
+    }//GEN-LAST:event_b6ActionPerformed
+
+    private void b7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b7ActionPerformed
+if(jogador1==true){
+       if(b7.getText().equals("")){
+           b7.setText("X");
+           JogadorAtivo();
+       }
+       else if(b7.getText().equals("")){
+            b7.setText("O");
+            JogadorAtivo();
+           }
+       
+     }    }//GEN-LAST:event_b7ActionPerformed
+
+    private void b8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b8ActionPerformed
+     if(jogador1==true){
+       if(b8.getText().equals("")){
+           b8.setText("X");
+           JogadorAtivo();
+       }
+       else if(b8.getText().equals("")){
+            b8.setText("O");
+            JogadorAtivo();
+           }
+       
+     }    }//GEN-LAST:event_b8ActionPerformed
+
+    private void b9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b9ActionPerformed
+    if(jogador1==true){
+       if(b9.getText().equals("")){
+           b9.setText("X");
+           JogadorAtivo();
+       }
+       else if(b9.getText().equals("")){
+            b9.setText("O");
+            JogadorAtivo();
+           }
+       
+     }    }//GEN-LAST:event_b9ActionPerformed
 
     /**
      * @param args the command line arguments
