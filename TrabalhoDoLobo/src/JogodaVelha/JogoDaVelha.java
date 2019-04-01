@@ -1,22 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package JogodaVelha;
 
 /**
  *
  * @author rafael Caronezi 
  * projeto jogo da velha.
- * versão 0.0.1
+ * versão 0.0.2
  */
 public class JogoDaVelha extends javax.swing.JFrame {
       boolean jogador1 = true;
       boolean jogador2 = false;
-    /**
-     * Creates new form JogoDaVelha
-     */
+    
     public JogoDaVelha() {
         initComponents();
     }
@@ -39,15 +32,15 @@ public class JogoDaVelha extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        b1 = new javax.swing.JButton();
-        b2 = new javax.swing.JButton();
-        b3 = new javax.swing.JButton();
-        b4 = new javax.swing.JButton();
-        b5 = new javax.swing.JButton();
-        b6 = new javax.swing.JButton();
-        b7 = new javax.swing.JButton();
-        b8 = new javax.swing.JButton();
-        b9 = new javax.swing.JButton();
+        B1 = new javax.swing.JButton();
+        B2 = new javax.swing.JButton();
+        B3 = new javax.swing.JButton();
+        B4 = new javax.swing.JButton();
+        B5 = new javax.swing.JButton();
+        B6 = new javax.swing.JButton();
+        B7 = new javax.swing.JButton();
+        B8 = new javax.swing.JButton();
+        B9 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -73,57 +66,57 @@ public class JogoDaVelha extends javax.swing.JFrame {
 
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        b1.addActionListener(new java.awt.event.ActionListener() {
+        B1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b1ActionPerformed(evt);
+                B1ActionPerformed(evt);
             }
         });
 
-        b2.addActionListener(new java.awt.event.ActionListener() {
+        B2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b2ActionPerformed(evt);
+                B2ActionPerformed(evt);
             }
         });
 
-        b3.addActionListener(new java.awt.event.ActionListener() {
+        B3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b3ActionPerformed(evt);
+                B3ActionPerformed(evt);
             }
         });
 
-        b4.addActionListener(new java.awt.event.ActionListener() {
+        B4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b4ActionPerformed(evt);
+                B4ActionPerformed(evt);
             }
         });
 
-        b5.addActionListener(new java.awt.event.ActionListener() {
+        B5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b5ActionPerformed(evt);
+                B5ActionPerformed(evt);
             }
         });
 
-        b6.addActionListener(new java.awt.event.ActionListener() {
+        B6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b6ActionPerformed(evt);
+                B6ActionPerformed(evt);
             }
         });
 
-        b7.addActionListener(new java.awt.event.ActionListener() {
+        B7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b7ActionPerformed(evt);
+                B7ActionPerformed(evt);
             }
         });
 
-        b8.addActionListener(new java.awt.event.ActionListener() {
+        B8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b8ActionPerformed(evt);
+                B8ActionPerformed(evt);
             }
         });
 
-        b9.addActionListener(new java.awt.event.ActionListener() {
+        B9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b9ActionPerformed(evt);
+                B9ActionPerformed(evt);
             }
         });
 
@@ -135,54 +128,53 @@ public class JogoDaVelha extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(22, 22, 22)
-                        .addComponent(b7, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(B7, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(b8)
+                        .addComponent(B8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(b9))
+                        .addComponent(B9))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(25, 25, 25)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(b1)
+                                .addComponent(B1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(b2)
+                                .addComponent(B2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(b3))
+                                .addComponent(B3))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(b4)
+                                .addComponent(B4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(b5)
+                                .addComponent(B5)
                                 .addGap(11, 11, 11)
-                                .addComponent(b6)))))
+                                .addComponent(B6)))))
                 .addGap(23, 69, Short.MAX_VALUE))
         );
 
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {b1, b2, b3, b4, b5, b6, b7, b8, b9});
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {B1, B2, B3, B4, B5, B6, B7, B8, B9});
 
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(b1)
-                    .addComponent(b2)
-                    .addComponent(b3))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(B1)
+                    .addComponent(B2)
+                    .addComponent(B3))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(b4)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(b5)
-                        .addComponent(b6, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(B4)
+                    .addComponent(B5)
+                    .addComponent(B6, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(b8)
-                    .addComponent(b9)
-                    .addComponent(b7))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(B8, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(B9)
+                    .addComponent(B7))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {b1, b2, b3, b4, b5, b6, b7, b8, b9});
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {B1, B2, B3, B4, B5, B6, B7, B8, B9});
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Informações do Jogo:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
 
@@ -321,125 +313,127 @@ public class JogoDaVelha extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
-     if(jogador1==true){
-       if(b2.getText().equals("")){
-         b2.setText("X");
-         JogadorAtivo();
-       }
-       else if(b2.getText().equals("")){
-           b2.setText("P");
-           JogadorAtivo();
-       }
-     }
-    }//GEN-LAST:event_b2ActionPerformed
-
-    private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
-     if(jogador1==true){
-       if(b1.getText().equals("")){
-           b1.setText("X");
-           JogadorAtivo();
-       }
-       else if(b1.getText().equals("")){
-            b1.setText("O");
-            JogadorAtivo();
+    private void B2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B2ActionPerformed
+     if(jogador1 == false){
+       
+           if(B2.getText().equals("")){
+               B2.setText("X");
+               JogadorAtivo();
            }
        
+       else {
+           B2.setText("O");
+           JogadorAtivo();
+         }
      }
-    }//GEN-LAST:event_b1ActionPerformed
+    }//GEN-LAST:event_B2ActionPerformed
 
-    private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
-       if(jogador1==true){
-       if(b3.getText().equals("")){
-           b3.setText("X");
+    private void B1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B1ActionPerformed
+     if(jogador1== false){
+       if(B1.getText().equals("")){
+           B1.setText("X");
            JogadorAtivo();
        }
-       else if(b3.getText().equals("")){
-            b3.setText("P");
+       else if(B1.getText().equals("")){
+            B1.setText("O");
             JogadorAtivo();
            }
        
      }
-    }//GEN-LAST:event_b3ActionPerformed
+    }//GEN-LAST:event_B1ActionPerformed
 
-    private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
-if(jogador1==true){
-       if(b4.getText().equals("")){
-           b4.setText("X");
+    private void B3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B3ActionPerformed
+       if(jogador1== false){
+       if(B3.getText().equals("")){
+           B3.setText("X");
            JogadorAtivo();
        }
-       else if(b4.getText().equals("")){
-            b4.setText("O");
-            JogadorAtivo();
-           }
-     }
-    }//GEN-LAST:event_b4ActionPerformed
-
-    private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
-       if(jogador1==true){
-        if(b5.getText().equals("")){
-           b5.setText("X");
-           JogadorAtivo();
-       }
-        else if(b5.getText().equals("")){
-            b5.setText("O");
-            JogadorAtivo();
-           }
-       
-     }    }//GEN-LAST:event_b5ActionPerformed
-
-    private void b6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b6ActionPerformed
-     if(jogador1==true){
-       if(b6.getText().equals("")){
-           b6.setText("X");
-           JogadorAtivo();
-       }
-       else if(b6.getText().equals("")){
-            b6.setText("O");
+       else if(B3.getText().equals("")){
+            B3.setText("P");
             JogadorAtivo();
            }
        
      }
-    }//GEN-LAST:event_b6ActionPerformed
+    }//GEN-LAST:event_B3ActionPerformed
 
-    private void b7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b7ActionPerformed
-if(jogador1==true){
-       if(b7.getText().equals("")){
-           b7.setText("X");
+    private void B4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B4ActionPerformed
+    if(jogador1== false){
+       if(B4.getText().equals("")){
+           B4.setText("X");
            JogadorAtivo();
        }
-       else if(b7.getText().equals("")){
-            b7.setText("O");
+       else if(B4.getText().equals("")){
+            B4.setText("O");
+            JogadorAtivo();
+           }
+     }
+    }//GEN-LAST:event_B4ActionPerformed
+
+    private void B5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B5ActionPerformed
+       if(jogador1== false){
+        if(B5.getText().equals("")){
+           B5.setText("X");
+           JogadorAtivo();
+       }
+        else if(B5.getText().equals("")){
+            B5.setText("O");
             JogadorAtivo();
            }
        
-     }    }//GEN-LAST:event_b7ActionPerformed
+     }    }//GEN-LAST:event_B5ActionPerformed
 
-    private void b8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b8ActionPerformed
-     if(jogador1==true){
-       if(b8.getText().equals("")){
-           b8.setText("X");
+    private void B6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B6ActionPerformed
+     if(jogador1 == false){
+       if(B6.getText().equals("")){
+           B6.setText("X");
            JogadorAtivo();
        }
-       else if(b8.getText().equals("")){
-            b8.setText("O");
+       else if(B6.getText().equals("")){
+            B6.setText("O");
             JogadorAtivo();
            }
        
-     }    }//GEN-LAST:event_b8ActionPerformed
+     }
+    }//GEN-LAST:event_B6ActionPerformed
 
-    private void b9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b9ActionPerformed
-    if(jogador1==true){
-       if(b9.getText().equals("")){
-           b9.setText("X");
+    private void B7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B7ActionPerformed
+     if(jogador1== false){
+       if(B7.getText().equals("")){
+           B7.setText("X");
            JogadorAtivo();
        }
-       else if(b9.getText().equals("")){
-            b9.setText("O");
+       else if(B7.getText().equals("")){
+            B7.setText("O");
             JogadorAtivo();
            }
        
-     }    }//GEN-LAST:event_b9ActionPerformed
+     }    }//GEN-LAST:event_B7ActionPerformed
+
+    private void B8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B8ActionPerformed
+     if(jogador1== false){
+       if(B8.getText().equals("")){
+           B8.setText("X");
+           JogadorAtivo();
+       }
+       else if(B8.getText().equals("")){
+            B8.setText("O");
+            JogadorAtivo();
+           }
+       
+     }    }//GEN-LAST:event_B8ActionPerformed
+
+    private void B9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B9ActionPerformed
+    if(jogador1== false){
+       if(B9.getText().equals(ABORT)){
+           B9.setText("X");
+           JogadorAtivo();
+       }
+       else if(B9.getText().equals("")){
+            B9.setText("O");
+            JogadorAtivo();
+           }
+       
+     }    }//GEN-LAST:event_B9ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -452,7 +446,7 @@ if(jogador1==true){
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -477,18 +471,18 @@ if(jogador1==true){
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton B1;
+    private javax.swing.JButton B2;
+    private javax.swing.JButton B3;
+    private javax.swing.JButton B4;
+    private javax.swing.JButton B5;
+    private javax.swing.JButton B6;
+    private javax.swing.JButton B7;
+    private javax.swing.JButton B8;
+    private javax.swing.JButton B9;
     private javax.swing.JButton Exit;
     private javax.swing.JButton Restart;
     private javax.swing.JButton Start;
-    private javax.swing.JButton b1;
-    private javax.swing.JButton b2;
-    private javax.swing.JButton b3;
-    private javax.swing.JButton b4;
-    private javax.swing.JButton b5;
-    private javax.swing.JButton b6;
-    private javax.swing.JButton b7;
-    private javax.swing.JButton b8;
-    private javax.swing.JButton b9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
