@@ -76,55 +76,150 @@ public class Intergace extends javax.swing.JFrame {
    } 
        //verifica a segunda linha:
        if(btn4.getText().contains("X") && btn5.getText().contains("X") && btn6.getText().contains("X"))
-       {
-           vitoria();
+       { btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
        }
        // verifica a terceira linha  x:
        if(btn7.getText().contains("X") && btn8.getText().contains("X") && btn9.getText().contains("X")) {
-           vitoria();
+            btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
        }
        // verifica a primeira coluna x:
        if(btn1.getText().contains("X") && btn4.getText().contains("X") && btn7.getText().contains("X")){
-           vitoria();
+            btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
        }
        
        //verifica a  segunda coluna x:
        if(btn2.getText().contains("X") && btn5.getText().contains("X") && btn8.getText().contains("X")){
-           vitoria();
+           btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
        }
        // verifica a terceira x:
            if(btn3.getText().contains("X") && btn6.getText().contains("X") && btn9.getText().contains("X")){
-               vitoria();
+                btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
            }
            
            // vericiando diagonal 1 :
            if(btn1.getText().contains("X") && btn5.getText().contains("X") && btn9.getText().contains("X")){
-               vitoria();
+                btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
            }
            //verifica segunda diagonal 2  x:
            if(btn3.getText().contains("X") && btn5.getText().contains("X") && btn9.getText().contains("X")){
-               vitoria();
+              btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
            }
            
            //verificando a primeira linha 1 0 ^:
            if(btn1.getText().contains("O") && btn2.getText().contains("O") && btn3.getText().contains("O")){
-               vitoria();
+                btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
            }
            //verificando a segunda linha 0:
            if(btn4.getText().contains("O") && btn5.getText().contains("O") && btn6.getText().contains("O")){
-              // vitoria();
+               btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);;
            }
            //verificando a terceira linha 0:
            if(btn7.getText().contains("O") && btn8.getText().contains("O") && btn9.getText().contains("O")){
-               vitoria();
+                btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
            }
            // verificando a diagonal 
            if(btn3.getText().contains("O") && btn5.getText().contains("O") && btn7.getText().contains("O")){
-               vitoria();
+               btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
            }
            //verificando a diagonal
            if(btn1.getText().contains("O") && btn5.getText().contains("O") && btn9.getText().contains("O")){
-               vitoria();
+              btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
            }
            
    }
