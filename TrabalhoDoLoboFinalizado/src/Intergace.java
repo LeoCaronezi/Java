@@ -1,12 +1,6 @@
 
 import javax.swing.JButton;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * @author rafael caronezi
@@ -18,45 +12,32 @@ public class Intergace extends javax.swing.JFrame {
      */
     int contador1; 
     int contador2;
-    String jogada;
+    String jogada,winner;
     int jogo =1;
     int vit;
     public Intergace() {
         initComponents();
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
     }
-    public void vitoria(){
-   //     vit = jogo;
-        btn1.setEnabled(false);
-        btn2.setEnabled(false);
-        btn3.setEnabled(false);
-        btn4.setEnabled(false);
-        btn5.setEnabled(false);
-        btn6.setEnabled(false);
-        btn7.setEnabled(false);
-        btn8.setEnabled(false);
-        btn9.setEnabled(false);
-    }
-    
-  /*  public void  contadorVitoria(){
-        if (vitoria() == 1){
-            contador1++;
-        }
-        else {
-            contador2++;
-        }
-    }*/
+   
+  
    public void jogada (JButton v){
        if (jogo == 1){
            jogada ="X";
             jogo = 0;  
             turno.setText("Jogador 1. ");
+            winner = "Jogador 1";
             v.setEnabled(false);
+            verifica();
        }
        else {
            jogada ="O";
            jogo = 1;
            turno.setText("Jogador 2.");
            v.setEnabled(false);
+           winner ="Jogador 2";
+           verifica();
        }
        v.setText(jogada);
    }
@@ -71,7 +52,8 @@ public class Intergace extends javax.swing.JFrame {
         btn6.setEnabled(false);
         btn7.setEnabled(false);
         btn8.setEnabled(false);
-        btn9.setEnabled(false);       
+        btn9.setEnabled(false);
+        vecendor.setText(winner);
 //vitoria();
    } 
        //verifica a segunda linha:
@@ -85,6 +67,7 @@ public class Intergace extends javax.swing.JFrame {
         btn7.setEnabled(false);
         btn8.setEnabled(false);
         btn9.setEnabled(false);
+        vecendor.setText(winner);
        }
        // verifica a terceira linha  x:
        if(btn7.getText().contains("X") && btn8.getText().contains("X") && btn9.getText().contains("X")) {
@@ -97,6 +80,7 @@ public class Intergace extends javax.swing.JFrame {
         btn7.setEnabled(false);
         btn8.setEnabled(false);
         btn9.setEnabled(false);
+        vecendor.setText(winner);
        }
        // verifica a primeira coluna x:
        if(btn1.getText().contains("X") && btn4.getText().contains("X") && btn7.getText().contains("X")){
@@ -109,6 +93,7 @@ public class Intergace extends javax.swing.JFrame {
         btn7.setEnabled(false);
         btn8.setEnabled(false);
         btn9.setEnabled(false);
+        vecendor.setText(winner);
        }
        
        //verifica a  segunda coluna x:
@@ -122,6 +107,7 @@ public class Intergace extends javax.swing.JFrame {
         btn7.setEnabled(false);
         btn8.setEnabled(false);
         btn9.setEnabled(false);
+        vecendor.setText(winner);
        }
        // verifica a terceira x:
            if(btn3.getText().contains("X") && btn6.getText().contains("X") && btn9.getText().contains("X")){
@@ -134,6 +120,7 @@ public class Intergace extends javax.swing.JFrame {
         btn7.setEnabled(false);
         btn8.setEnabled(false);
         btn9.setEnabled(false);
+        vecendor.setText(winner);
            }
            
            // vericiando diagonal 1 :
@@ -147,6 +134,7 @@ public class Intergace extends javax.swing.JFrame {
         btn7.setEnabled(false);
         btn8.setEnabled(false);
         btn9.setEnabled(false);
+        vecendor.setText(winner);
            }
            //verifica segunda diagonal 2  x:
            if(btn3.getText().contains("X") && btn5.getText().contains("X") && btn9.getText().contains("X")){
@@ -159,67 +147,72 @@ public class Intergace extends javax.swing.JFrame {
         btn7.setEnabled(false);
         btn8.setEnabled(false);
         btn9.setEnabled(false);
+        vecendor.setText(winner);
            }
            
            //verificando a primeira linha 1 0 ^:
            if(btn1.getText().contains("O") && btn2.getText().contains("O") && btn3.getText().contains("O")){
-                btn1.setEnabled(false);
-        btn2.setEnabled(false);
-        btn3.setEnabled(false);
-        btn4.setEnabled(false);
-        btn5.setEnabled(false);
-        btn6.setEnabled(false);
-        btn7.setEnabled(false);
-        btn8.setEnabled(false);
-        btn9.setEnabled(false);
+             btn1.setEnabled(false);
+             btn2.setEnabled(false);
+             btn3.setEnabled(false);
+             btn4.setEnabled(false);
+             btn5.setEnabled(false);
+             btn6.setEnabled(false);
+             btn7.setEnabled(false);
+             btn8.setEnabled(false);
+             btn9.setEnabled(false);
+             vecendor.setText(winner);
            }
            //verificando a segunda linha 0:
            if(btn4.getText().contains("O") && btn5.getText().contains("O") && btn6.getText().contains("O")){
                btn1.setEnabled(false);
-        btn2.setEnabled(false);
-        btn3.setEnabled(false);
-        btn4.setEnabled(false);
-        btn5.setEnabled(false);
-        btn6.setEnabled(false);
-        btn7.setEnabled(false);
-        btn8.setEnabled(false);
-        btn9.setEnabled(false);;
+             btn2.setEnabled(false);
+             btn3.setEnabled(false);
+             btn4.setEnabled(false);
+             btn5.setEnabled(false);
+             btn6.setEnabled(false);
+             btn7.setEnabled(false);
+             btn8.setEnabled(false);
+            btn9.setEnabled(false);
+            vecendor.setText(winner);
            }
            //verificando a terceira linha 0:
            if(btn7.getText().contains("O") && btn8.getText().contains("O") && btn9.getText().contains("O")){
                 btn1.setEnabled(false);
-        btn2.setEnabled(false);
-        btn3.setEnabled(false);
-        btn4.setEnabled(false);
-        btn5.setEnabled(false);
-        btn6.setEnabled(false);
-        btn7.setEnabled(false);
-        btn8.setEnabled(false);
-        btn9.setEnabled(false);
+             btn2.setEnabled(false);
+             btn3.setEnabled(false);
+             btn4.setEnabled(false);
+             btn5.setEnabled(false);
+             btn6.setEnabled(false);
+             btn7.setEnabled(false);
+             btn8.setEnabled(false);
+             btn9.setEnabled(false);
+             vecendor.setText(winner);
            }
            // verificando a diagonal 
            if(btn3.getText().contains("O") && btn5.getText().contains("O") && btn7.getText().contains("O")){
                btn1.setEnabled(false);
-        btn2.setEnabled(false);
-        btn3.setEnabled(false);
-        btn4.setEnabled(false);
-        btn5.setEnabled(false);
-        btn6.setEnabled(false);
-        btn7.setEnabled(false);
-        btn8.setEnabled(false);
-        btn9.setEnabled(false);
+               btn2.setEnabled(false);
+               btn3.setEnabled(false);
+               btn4.setEnabled(false);
+               btn5.setEnabled(false);
+               btn6.setEnabled(false);
+               btn7.setEnabled(false);
+               btn8.setEnabled(false);
+               btn9.setEnabled(false);
            }
            //verificando a diagonal
            if(btn1.getText().contains("O") && btn5.getText().contains("O") && btn9.getText().contains("O")){
               btn1.setEnabled(false);
-        btn2.setEnabled(false);
-        btn3.setEnabled(false);
-        btn4.setEnabled(false);
-        btn5.setEnabled(false);
-        btn6.setEnabled(false);
-        btn7.setEnabled(false);
-        btn8.setEnabled(false);
-        btn9.setEnabled(false);
+              btn2.setEnabled(false);
+              btn3.setEnabled(false);
+              btn4.setEnabled(false);
+              btn5.setEnabled(false);
+              btn6.setEnabled(false);
+              btn7.setEnabled(false);
+              btn8.setEnabled(false);
+              btn9.setEnabled(false);
+              vecendor.setText(winner);
            }
            
    }
@@ -251,7 +244,7 @@ public class Intergace extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        contadordevitoriaJogador1 = new javax.swing.JLabel();
+        vecendor = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -383,20 +376,23 @@ public class Intergace extends javax.swing.JFrame {
 
         jLabel3.setText("vitorias:");
 
-        contadordevitoriaJogador1.setText("XXXX");
+        vecendor.setText("XXXX");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(contadordevitoriaJogador1)
-                .addContainerGap(143, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel3))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(119, 119, 119)
+                        .addComponent(vecendor)))
+                .addContainerGap(146, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -404,9 +400,10 @@ public class Intergace extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(contadordevitoriaJogador1))
-                .addContainerGap(215, Short.MAX_VALUE))
+                    .addComponent(jLabel3))
+                .addGap(18, 18, 18)
+                .addComponent(vecendor)
+                .addContainerGap(183, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -516,12 +513,12 @@ public class Intergace extends javax.swing.JFrame {
     private javax.swing.JButton btn7;
     private javax.swing.JButton btn8;
     private javax.swing.JButton btn9;
-    private javax.swing.JLabel contadordevitoriaJogador1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel turno;
+    private javax.swing.JLabel vecendor;
     // End of variables declaration//GEN-END:variables
 }
