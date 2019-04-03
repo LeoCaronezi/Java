@@ -11,15 +11,28 @@ public class Intergace extends javax.swing.JFrame {
     int contador2;
     String jogada,winner;
     int jogo =1;
-    int vit;
-    public Intergace() {
+       public Intergace() {
         initComponents();
         this.setResizable(false);
         this.setLocationRelativeTo(null);
+        
+        //tirando  o dfocus 
+        btn1.setFocusable(false);
+        btn2.setFocusable(false);
+        btn3.setFocusable(false);
+        btn4.setFocusable(false);
+        btn5.setFocusable(false);
+        btn6.setFocusable(false);
+        btn7.setFocusable(false);
+        btn8.setFocusable(false);
+        btn9.setFocusable(false);
+        
+        
+        
     }
-   
   
-   public void jogada (JButton v){
+  
+   public void Jogada (JButton v){
        if (jogo == 1){
            jogada ="X";
             jogo = 0;  
@@ -54,7 +67,7 @@ public class Intergace extends javax.swing.JFrame {
           btn1.setForeground(Color.red);
           btn2.setForeground(Color.red);
           btn3.setForeground(Color.red);
-          
+          contador1++;
 //vitoria();
    } 
        //verifica a segunda linha:
@@ -72,6 +85,7 @@ public class Intergace extends javax.swing.JFrame {
         btn4.setForeground(Color.red);
         btn5.setForeground(Color.red);
         btn6.setForeground(Color.red);
+        contador1++;
        }
        // verifica a terceira linha  x:
        if(btn7.getText().contains("X") && btn8.getText().contains("X") && btn9.getText().contains("X")) {
@@ -88,6 +102,7 @@ public class Intergace extends javax.swing.JFrame {
         btn7.setForeground(Color.red);
         btn8.setForeground(Color.red);
         btn9.setForeground(Color.red);
+        contador1++;
        }
        // verifica a primeira coluna x:
        if(btn1.getText().contains("X") && btn4.getText().contains("X") && btn7.getText().contains("X")){
@@ -104,6 +119,7 @@ public class Intergace extends javax.swing.JFrame {
         btn1.setForeground(Color.red);
         btn4.setForeground(Color.red);
         btn7.setForeground(Color.red);
+       
        }
        
        //verifica a  segunda coluna x:
@@ -121,6 +137,7 @@ public class Intergace extends javax.swing.JFrame {
           btn2.setForeground(Color.red);
           btn5.setForeground(Color.red);
           btn8.setForeground(Color.red);
+          contador1++;
        }
        // verifica a terceira x:
            if(btn3.getText().contains("X") && btn6.getText().contains("X") && btn9.getText().contains("X")){
@@ -137,6 +154,7 @@ public class Intergace extends javax.swing.JFrame {
         btn3.setForeground(Color.red);
         btn6.setForeground(Color.red);
         btn9.setForeground(Color.red);
+        contador1++;
            }
            
            // vericiando diagonal 1 :
@@ -154,6 +172,7 @@ public class Intergace extends javax.swing.JFrame {
         btn1.setForeground(Color.red);
         btn5.setForeground(Color.red);
         btn9.setForeground(Color.red);
+        contador1++;
            }
            //verifica segunda diagonal 2  x:
            if(btn3.getText().contains("X") && btn5.getText().contains("X") && btn9.getText().contains("X")){
@@ -170,6 +189,7 @@ public class Intergace extends javax.swing.JFrame {
               btn3.setForeground(Color.red);
               btn5.setForeground(Color.red);
               btn9.setForeground(Color.red);
+              contador1++;
            }
            
            //verificando a primeira linha 1 0 ^:
@@ -187,6 +207,7 @@ public class Intergace extends javax.swing.JFrame {
              btn1.setForeground(Color.blue);
              btn2.setForeground(Color.blue);
              btn3.setForeground(Color.blue);
+             contador2++;
            }
            //verificando a segunda linha 0:
            if(btn4.getText().contains("O") && btn5.getText().contains("O") && btn6.getText().contains("O")){
@@ -198,11 +219,13 @@ public class Intergace extends javax.swing.JFrame {
              btn6.setEnabled(false);
              btn7.setEnabled(false);
              btn8.setEnabled(false);
-            btn9.setEnabled(false);
-            vecendor.setText("JOGADOR 2 ");
+             btn9.setEnabled(false);
+              vecendor.setText("JOGADOR 2 ");
                btn4.setForeground(Color.blue);
                btn5.setForeground(Color.blue);
                btn6.setForeground(Color.blue);
+             contador2++;
+
            }
            //verificando a terceira linha 0:
            if(btn7.getText().contains("O") && btn8.getText().contains("O") && btn9.getText().contains("O")){
@@ -219,6 +242,8 @@ public class Intergace extends javax.swing.JFrame {
                 btn7.setForeground(Color.blue);
                 btn8.setForeground(Color.blue);
                 btn9.setForeground(Color.blue);
+                         contador2++;
+
            }
            // verificando a diagonal 
            if(btn3.getText().contains("O") && btn5.getText().contains("O") && btn7.getText().contains("O")){
@@ -235,6 +260,8 @@ public class Intergace extends javax.swing.JFrame {
                 btn7.setForeground(Color.blue);
                 btn5.setForeground(Color.blue);
                 btn3.setForeground(Color.blue);
+                             contador2++;
+
            }
            //verificando a diagonal
            if(btn1.getText().contains("O") && btn5.getText().contains("O") && btn9.getText().contains("O")){
@@ -251,7 +278,13 @@ public class Intergace extends javax.swing.JFrame {
              btn5.setForeground(Color.blue);
              btn9.setForeground(Color.blue);
              btn1.setForeground(Color.blue);
+             contador2++;
            }
+        if(  btn1.getText()!="" && btn2.getText()!="" && btn3.getText()!=""
+                 && btn4.getText()!="" && btn5.getText()!="" && btn6.getText()!=""
+                 && btn7.getText()!="" && btn8.getText()!="" && btn9.getText()!=""){
+            vecendor.setText("Velha");
+        }
            
    }
    
@@ -271,9 +304,7 @@ public class Intergace extends javax.swing.JFrame {
         btn9 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         turno = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        Start = new javax.swing.JButton();
         vecendor = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -338,18 +369,24 @@ public class Intergace extends javax.swing.JFrame {
         turno.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         turno.setText("Jogador");
 
+        Start.setText("Start");
+        Start.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                StartActionPerformed(evt);
+            }
+        });
+
+        vecendor.setText("E o Vencendor E :");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(turno))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(vecendor, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(btn7)
@@ -363,11 +400,17 @@ public class Intergace extends javax.swing.JFrame {
                                 .addComponent(btn4)
                                 .addGap(18, 18, 18)
                                 .addComponent(btn5)))
-                        .addGap(26, 26, 26)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btn6)
-                            .addComponent(btn3)
-                            .addComponent(btn9))))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(jLabel1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(turno))))
+                .addGap(26, 26, 26)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Start)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(btn6)
+                        .addComponent(btn3)
+                        .addComponent(btn9)))
                 .addContainerGap(27, Short.MAX_VALUE))
         );
 
@@ -394,47 +437,13 @@ public class Intergace extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(turno))
-                .addContainerGap(35, Short.MAX_VALUE))
+                    .addComponent(turno)
+                    .addComponent(Start))
+                .addGap(18, 18, 18)
+                .addComponent(vecendor, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE))
         );
 
         jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9});
-
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Informações Do Jogo:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 0, 18))); // NOI18N
-
-        jLabel2.setText("Jogador1:");
-
-        jLabel3.setText("vitorias:");
-
-        vecendor.setText("XXXX");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel2)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel3))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(119, 119, 119)
-                        .addComponent(vecendor)))
-                .addContainerGap(146, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addGap(18, 18, 18)
-                .addComponent(vecendor)
-                .addContainerGap(183, Short.MAX_VALUE))
-        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -443,19 +452,13 @@ public class Intergace extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -463,53 +466,84 @@ public class Intergace extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-      jogada(btn1);
+      Jogada(btn1);
       verifica ();
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
-     jogada(btn2);
+     Jogada(btn2);
      verifica ();
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
-      jogada(btn3);
+      Jogada(btn3);
       verifica ();
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-     jogada(btn4);
+     Jogada(btn4);
      verifica ();
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-     jogada (btn5);
+     Jogada (btn5);
      verifica ();
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
-      jogada (btn6);
+      Jogada (btn6);
       verifica ();
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-       jogada (btn7);
+       Jogada (btn7);
        verifica ();
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
-       jogada (btn8);
+       Jogada (btn8);
        verifica ();
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
-        jogada (btn9);
+        Jogada (btn9);
         verifica ();
     }//GEN-LAST:event_btn9ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void StartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StartActionPerformed
+        jogo = 1 ;
+              btn1.setEnabled(true);
+              btn2.setEnabled(true);
+              btn3.setEnabled(true);
+              btn4.setEnabled(true);
+              btn5.setEnabled(true);
+              btn6.setEnabled(true);
+              btn7.setEnabled(true);
+              btn8.setEnabled(true);
+              btn9.setEnabled(true);
+              // liberando os botoes 
+              btn1.setText("");
+              btn2.setText("");   
+              btn3.setText("");
+              btn4.setText("");
+              btn5.setText("");
+              btn6.setText("");
+              btn7.setText("");
+              btn8.setText("");
+              btn9.setText("");
+              // desabilitando as cores 
+            btn1.setForeground(Color.black);
+            btn2.setForeground(Color.black);
+            btn3.setForeground(Color.black);
+            btn4.setForeground(Color.black);
+            btn5.setForeground(Color.black);
+            btn6.setForeground(Color.black);
+            btn7.setForeground(Color.black);
+            btn8.setForeground(Color.black);
+            btn9.setForeground(Color.black);
+    }//GEN-LAST:event_StartActionPerformed
+
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -543,6 +577,7 @@ public class Intergace extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Start;
     private javax.swing.JButton btn1;
     private javax.swing.JButton btn2;
     private javax.swing.JButton btn3;
@@ -553,10 +588,7 @@ public class Intergace extends javax.swing.JFrame {
     private javax.swing.JButton btn8;
     private javax.swing.JButton btn9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel turno;
     private javax.swing.JLabel vecendor;
     // End of variables declaration//GEN-END:variables
