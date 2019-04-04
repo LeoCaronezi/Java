@@ -531,6 +531,7 @@ public class Intergace extends javax.swing.JFrame {
               btn7.setText("");
               btn8.setText("");
               btn9.setText("");
+              vecendor.setText("E o vencendor e :");
               // desabilitando as cores 
             btn1.setForeground(Color.black);
             btn2.setForeground(Color.black);
