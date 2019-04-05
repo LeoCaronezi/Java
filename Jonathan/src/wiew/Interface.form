@@ -23,13 +23,268 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="115" max="32767" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel2" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="33" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="18" max="32767" attributes="0"/>
+                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Gerar"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Limpar "/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Cartela">
+              <Font PropertyName="font" name="Times New Roman" size="18" style="1"/>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="text4" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="text8" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="text12" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="text16" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="text20" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="text24" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="text1" linkSize="1" max="32767" attributes="0"/>
+                              <Component id="text2" linkSize="1" max="32767" attributes="0"/>
+                              <Component id="text3" linkSize="1" pref="66" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="text7" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="text11" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="text15" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="text19" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="text23" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="text5" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="text9" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="text6" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                          <Component id="text10" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="text14" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="text18" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="text22" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="text13" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="text17" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="text21" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="text25" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="100" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jSeparator1" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="text1" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text13" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text5" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text9" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text17" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text21" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text25" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="text2" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text14" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text6" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text10" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text18" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text22" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="text3" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text15" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text7" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text11" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text19" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text23" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="text4" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text8" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text12" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text16" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text20" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="text24" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jSeparator1" min="-2" pref="21" max="-2" attributes="0"/>
+                  <EmptySpace pref="94" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JSeparator" name="jSeparator1">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text1">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text2">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text3">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text4">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text5">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text6">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text7">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text8">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text9">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text10">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text11">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text12">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text13">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text14">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text15">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text16">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text17">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text18">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text19">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text20">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text21">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text22">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text23">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text24">
+        </Component>
+        <Component class="javax.swing.JTextField" name="text25">
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
 </Form>
