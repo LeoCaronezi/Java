@@ -5,10 +5,9 @@
 import java.util.Random;
 import java.util.ArrayList;
 public class Interface extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Interface
-     */
+    
+  public int num;
+   
     public Interface() {
         initComponents();
     }
@@ -16,8 +15,22 @@ public class Interface extends javax.swing.JFrame {
         int vetor [] = new int [15];
         Random g =  new Random ();
         for(int i =0; i<14; i++){
-           vetor[i] = g.nextInt(26);
+           vetor[i] = g.nextInt(25);
         }
+      for(int i =0; i<14; i++){
+        for (int j =0; j<13; j++){
+            if (vetor[j]== vetor[j+1]){
+                vetor[j]=g.nextInt(25);
+            }
+            else if(vetor[j]>25){
+                vetor[j]=g.nextInt();
+            }
+        }
+         if (vetor[i]== vetor[i+1]){
+            vetor[i] = g.nextInt();
+         }
+      }
+            
         txt1.setText(""+vetor[0]);
         txt2.setText(""+vetor[1]);
         txt3.setText(""+vetor[2]);
