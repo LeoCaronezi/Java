@@ -17,20 +17,25 @@ public class Interface extends javax.swing.JFrame {
         for(int i =0; i<14; i++){
            vetor[i] = g.nextInt(25);
         }
-      for(int i =0; i<14; i++){
-        for (int j =0; j<13; j++){
-            if (vetor[j]== vetor[j+1]){
-                vetor[j]=g.nextInt(25);
-            }
-            else if(vetor[j]>25){
-                vetor[j]=g.nextInt();
-            }
+        for(int i=0; i<14; i++){
+         if (vetor[i]== vetor[0]||vetor[i]== vetor[2] || vetor[i] == vetor[3] || vetor[i] == vetor[4]){
+             vetor[i]=g.nextInt(25);
+    }
+        else   if(vetor[i]== vetor[5]||vetor[i] == vetor[6] || vetor[i] == vetor[7] ){
+            vetor[i] = g.nextInt(25);
+           }
+        else if (vetor[i]== vetor[8]||vetor[i]== vetor[9]|| vetor[i] == vetor[10]){
+            vetor[i] = g.nextInt(25);
         }
-         if (vetor[i]== vetor[i+1]){
-            vetor[i] = g.nextInt();
-         }
-      }
-            
+        else if (vetor[i]== vetor[11]|| vetor[i] == vetor[13]|| vetor[i] == vetor[14] )
+        {
+            vetor[i] = g.nextInt(25);
+
+        }
+        else if(vetor[i]== vetor[1]){
+            vetor[i] = g.nextInt(25);
+        }
+        }
         txt1.setText(""+vetor[0]);
         txt2.setText(""+vetor[1]);
         txt3.setText(""+vetor[2]);
