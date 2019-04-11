@@ -21,7 +21,6 @@ public class Interface extends javax.swing.JFrame {
            vetor[i] = g.nextInt(25);
            vet[i] = g.nextInt(25);
         }
-        }
        // listando os numeros  na interface 
        if (vetor[0] != vetor[1]){
             txt1.setText(""+ vetor[0]);
