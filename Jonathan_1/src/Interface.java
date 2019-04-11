@@ -13,45 +13,37 @@ public class Interface extends javax.swing.JFrame {
     }
     public void Gerar(){
         int vetor [] = new int [15];
+        int vet [] = new int [15];
+      //  ArrayList<Integer> list = new ArrayList();
         Random g =  new Random ();
         for(int i =0; i<14; i++){
+          //  list.add(g.nextInt(25));
            vetor[i] = g.nextInt(25);
-        }
-        for(int i=0; i<14; i++){
-         if (vetor[i]== vetor[0]||vetor[i]== vetor[2] || vetor[i] == vetor[3] || vetor[i] == vetor[4]){
-             vetor[i]=g.nextInt(25);
-    }
-        else   if(vetor[i]== vetor[5]||vetor[i] == vetor[6] || vetor[i] == vetor[7] ){
-            vetor[i] = g.nextInt(25);
-           }
-        else if (vetor[i]== vetor[8]||vetor[i]== vetor[9]|| vetor[i] == vetor[10]){
-            vetor[i] = g.nextInt(25);
-        }
-        else if (vetor[i]== vetor[11]|| vetor[i] == vetor[13]|| vetor[i] == vetor[14] )
-        {
-            vetor[i] = g.nextInt(25);
-
-        }
-        else if(vetor[i]== vetor[1]){
-            vetor[i] = g.nextInt(25);
+           vet[i] = g.nextInt(25);
         }
         }
-        txt1.setText(""+vetor[0]);
-        txt2.setText(""+vetor[1]);
-        txt3.setText(""+vetor[2]);
-        txt4.setText(""+vetor[3]);
-        txt5.setText(""+vetor[4]);
-        txt6.setText(""+vetor[5]);
-        txt7.setText(""+vetor[6]);
-        txt8.setText(""+vetor[7]);
-        txt9.setText(""+vetor[8]);
-        txt10.setText(""+vetor[9]);
-        txt11.setText(""+vetor[10]);
-        txt12.setText(""+vetor[11]);
-        txt13.setText(""+vetor[12]);
-        txt14.setText(""+vetor[13]);
-        txt15.setText(""+vetor[14]);
-        
+       // listando os numeros  na interface 
+       if (vetor[0] != vetor[1]){
+            txt1.setText(""+ vetor[0]);
+       }
+            else{ 
+            vetor[0] = g.nextInt(25);
+            txt1.setText(""+ vetor[0]);        
+       }   
+       if (vetor[0]!= vetor[2]){
+          txt1.setText(""+ vetor[0]);
+       }   
+       else {
+           vetor[0] = g.nextInt(25);
+            txt1.setText(""+ vetor[0]);
+       }
+       if (vetor[0]!= vetor[3]){
+           txt1.setText(""+ vetor[0]);
+       }
+       else{
+           vetor[0] = g.nextInt(25);
+            txt1.setText(""+ vetor[0]);
+       }
     }
     public void Limpar(){
         txt1.setText("");
