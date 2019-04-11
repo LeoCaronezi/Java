@@ -4,6 +4,9 @@
  */
 import java.util.Random;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 public class Interface extends javax.swing.JFrame {
     
   public int num;
@@ -12,37 +15,26 @@ public class Interface extends javax.swing.JFrame {
         initComponents();
     }
     public void Gerar(){
-        int vetor [] = new int [15];
-        int vet [] = new int [15];
-      //  ArrayList<Integer> list = new ArrayList();
-        Random g =  new Random ();
-        for(int i =0; i<14; i++){
-          //  list.add(g.nextInt(25));
-           vetor[i] = g.nextInt(25);
-           vet[i] = g.nextInt(25);
-        }
-       // listando os numeros  na interface 
-       if (vetor[0] != vetor[1]){
-            txt1.setText(""+ vetor[0]);
-       }
-            else{ 
-            vetor[0] = g.nextInt(25);
-            txt1.setText(""+ vetor[0]);        
-       }   
-       if (vetor[0]!= vetor[2]){
-          txt1.setText(""+ vetor[0]);
-       }   
-       else {
-           vetor[0] = g.nextInt(25);
-            txt1.setText(""+ vetor[0]);
-       }
-       if (vetor[0]!= vetor[3]){
-           txt1.setText(""+ vetor[0]);
-       }
-       else{
-           vetor[0] = g.nextInt(25);
-            txt1.setText(""+ vetor[0]);
-       }
+       int contador =0;
+       String[] vetor = {"1","2","3","4","5","6","7","8","9","10","11","12",
+       "13","14","15","16","17","18","19","20","21","22","23","24","25"} ;   
+         List   <String> list = Arrays.asList(vetor);
+         Collections.shuffle(list); 
+          txt1.setText(vetor[0]);
+          txt2.setText(vetor[1]);
+          txt3.setText(vetor[2]);
+          txt4.setText(vetor[3]);
+          txt14.setText(vetor[14]);
+          txt5.setText(vetor[5]);
+          txt6.setText(vetor[6]);
+          txt7.setText(vetor[7]);
+          txt8.setText(vetor[8]);
+          txt9.setText(vetor[9]);
+          txt10.setText(vetor[10]);
+          txt11.setText(vetor[11]);
+          txt12.setText(vetor[12]);
+          txt13.setText(vetor[13]);
+          txt15.setText(vetor[15]);
     }
     public void Limpar(){
         txt1.setText("");
