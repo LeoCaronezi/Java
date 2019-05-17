@@ -37,6 +37,7 @@ public class visaoTesteElevador {
                System.out.println("informe pessoas a entra no elevador:");
                elevador.pessoasAentrar = Integer.parseInt(leitor.nextLine());
                elevador.EntraElevador();
+               elevador.op=Integer.parseInt(leitor.nextLine());
                 
            }
                
@@ -45,6 +46,7 @@ public class visaoTesteElevador {
                System.out.println("Informe o andar desejado:");
                elevador.andarDesejado= Integer.parseInt(leitor.nextLine());
                elevador.SubirElevador();
+               elevador.op=Integer.parseInt(leitor.nextLine());
                
                }
            // sair do elevador 
@@ -53,6 +55,7 @@ public class visaoTesteElevador {
                        + "elevador");
                elevador.pessoasAsair= Integer.parseInt(leitor.nextLine());
                elevador.SairElevador();
+               elevador.op=Integer.parseInt(leitor.nextLine());
                }
            //descer elevador
             if(elevador.op==4){
@@ -60,6 +63,7 @@ public class visaoTesteElevador {
                elevador.andarDesejado= Integer.parseInt(leitor.nextLine());
                elevador.SubirElevador();
                elevador.DescerElevador();
+               elevador.op=Integer.parseInt(leitor.nextLine());
                }
             // finalizar programa     
            if(elevador.op==5){
