@@ -25,8 +25,9 @@ public class Elevador {
                  JOptionPane.showInputDialog("Informa a capacidade maxima de pessoas no elevador"));
     }
     public void EntraElevador(){
+        
       if ((pessoasAentrar+pessoas)<=capacidade){
-            
+            pessoas += pessoasAentrar;
       }
       else{
                   JOptionPane.showInputDialog("limite de pessoa alcançada");    
@@ -52,6 +53,7 @@ public class Elevador {
         JOptionPane.showInputDialog("O elevador chegou" +andarAtual);
        }  
     }
+    //funcionando corretamente 
     public void FinalizarElevador(){
         op = 6;
     }
