@@ -16,7 +16,8 @@ public class ConversãoDeDolarParaReal {
      */
     public static void main(String[] args) {
       Scanner scan = new Scanner  (System.in);
-      double cotacao,dolar;
+      double cotacao;
+       double dolar;
       System.out.println("Digite a cotação do dolar: ");
       cotacao = scan.nextDouble();
       System.out.println("Digite o valor em dolar:");
